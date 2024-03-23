@@ -24,11 +24,7 @@ def bubble_sort(arr):
 # Nhập số lượng phần tử từ người dùng
 n = int(input("Nhập số lượng phần tử trong danh sách: "))
 
-# Tạo danh sách chứa các số ngẫu nhiên
-# Hàm random.randint sẽ chọn ngẫu nhiên n phần tử nhưng trùng lặp từ một dãy số.
-# my_list = [random.randint(1, 100) for _ in range(n)]
-
-# Hàm random.sample sẽ chọn ngẫu nhiên n phần tử không trùng lặp từ một dãy số.
+# Tạo danh sách chứa các số ngẫu nhiên không b trùng lặp
 my_list = random.sample(range(1, 101), n)
 
 print("Danh sách trước khi sắp xếp là:", my_list)
