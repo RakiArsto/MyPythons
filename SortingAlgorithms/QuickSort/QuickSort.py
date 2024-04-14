@@ -19,8 +19,8 @@ def QuickSort(arr, left, right):
         QuickSort(arr, pi + 1, right)
 
 
-n = int(input("Nhập số lượng phần tử trong danh sách: "))
+n = int(input("Enter the number of elements in the list: "))
 my_list = random.sample(range(1, 101), n)
-print(f"Danh sách trước khi sắp xếp là: {my_list}")
+print(f"The list before sorting is: \n{my_list}")
 QuickSort(my_list, 0, len(my_list) - 1)
-print(f"Danh sách sau khi sắp xếp bằng Quick Sort là: {my_list}")
+print(f"The list after sorting using Quick Sort is: \n{my_list}")

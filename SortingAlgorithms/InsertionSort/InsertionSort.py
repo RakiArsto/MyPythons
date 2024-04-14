@@ -12,8 +12,8 @@ def InsertionSort(arr):
         arr[j + 1] = temp
 
 
-n = int(input("Nhập số lượng phần tử trong danh sách: "))
+n = int(input("Enter the number of elements in the list: "))
 my_list = random.sample(range(1, 101), n)
-print(f"Danh sách trước khi sắp xếp là: {my_list}")
+print(f"The list before sorting is: \n{my_list}")
 InsertionSort(my_list)
-print(f"Danh sách sau khi sắp xếp bằng Insertion Sort là: {my_list}")
+print(f"The list after sorting using Insertion Sort is: \n{my_list}")

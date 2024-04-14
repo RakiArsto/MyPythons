@@ -1,7 +1,7 @@
 import random
 
 
-def selection_sort(arr):
+def SelectionSort(arr):
     n = len(arr)
     for i in range(n):
         min_index = i
@@ -11,8 +11,8 @@ def selection_sort(arr):
         arr[i], arr[min_index] = arr[min_index], arr[i]
 
 
-n = int(input("Nhập số lượng phần tử trong danh sách: "))
+n = int(input("Enter the number of elements in the list: "))
 my_list = random.sample(range(1, 101), n)
-print(f"Danh sách trước khi sắp xếp là: {my_list}")
-selection_sort(my_list)
-print(f"Danh sách sau khi sắp xếp bằng Selection Sort là: {my_list}")
+print(f"The list before sorting is: \n{my_list}")
+SelectionSort(my_list)
+print(f"The list after sorting using Selection Sort is: \n{my_list}")
