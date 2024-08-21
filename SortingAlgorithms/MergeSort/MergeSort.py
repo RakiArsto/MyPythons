@@ -1,6 +1,5 @@
 import random
 
-
 def Merge(left, right):
     result = []
     left_idx = 0
@@ -24,7 +23,6 @@ def Merge(left, right):
 
     return result
 
-
 def MergeSort(arr):
     if len(arr) <= 1:
         return arr
@@ -37,7 +35,6 @@ def MergeSort(arr):
     right_half = MergeSort(right_half)
 
     return Merge(left_half, right_half)
-    
     
 n = int(input("Enter the number of elements in the list: "))
 my_list = random.sample(range(1, 101), n)
